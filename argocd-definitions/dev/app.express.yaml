@@ -13,7 +13,7 @@ spec:
   project: default
   source:
     path: ./k8s-resources/express/overlays/dev
-    repoURL: https://github.com/nightmar39/cd-five-mins-testing-official.git
+    repoURL: https://github.com/nightmar39/cd-five-mins-testing.git
     targetRevision: main
   syncPolicy:
     syncOptions:

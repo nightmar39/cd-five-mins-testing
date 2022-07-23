@@ -12,7 +12,7 @@ spec:
     namespace: trio-dev
     name: us-support-v2-cluster
   source:
-    repoURL: https://github.com/nightmar39/cd-five-mins-testing-official.git
+    repoURL: https://github.com/nightmar39/cd-five-mins-testing.git
     targetRevision: main
     path: ./k8s-resources/trio/dev
     helm:
