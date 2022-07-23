@@ -1,0 +1,28 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: trio-dev
+  labels:
+    app: trio-dev
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  destination:
+    namespace: trio-dev
+    name: CLUSTER_NAME
+  source:
+    repoURL: https://github.com/GITHUB_USER/GITHUB_REPO-official.git
+    targetRevision: main
+    path: ./k8s-resources/trio/dev
+    helm:
+      parameters:
+        - name: buildID
+          value: argocd
+      valueFiles:
+        - values.yaml
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
+    automated:
+      prune: true

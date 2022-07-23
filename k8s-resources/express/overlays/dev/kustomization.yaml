@@ -1,0 +1,8 @@
+# kustomize edit set image quay.io/codefresh_sa/express-microservice:test
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../base
+images:
+  - name: quay.io/codefresh_sa/express
+    newTag: "5416e81"
