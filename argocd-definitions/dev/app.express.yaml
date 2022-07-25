@@ -9,11 +9,11 @@ metadata:
 spec:
   destination:
     namespace: express-dev
-    name: us-support-v2-cluster
+    name: CLUSTER_NAME
   project: default
   source:
     path: ./k8s-resources/express/overlays/dev
-    repoURL: https://github.com/nightmar39/cd-five-mins-testing.git
+    repoURL: https://github.com/GITHUB_USER/GITHUB_REPO.git
     targetRevision: main
   syncPolicy:
     syncOptions:
