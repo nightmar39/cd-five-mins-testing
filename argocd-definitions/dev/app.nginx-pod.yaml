@@ -10,6 +10,7 @@ spec:
   project: default
   destination:
     namespace: nginx-pod-dev
+    name: https://kubernetes.default.svc
   source:
     repoURL: https://github.com/nightmar39/cd-five-mins-testing.git
     targetRevision: main
