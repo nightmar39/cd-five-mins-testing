@@ -10,7 +10,6 @@ spec:
   project: default
   destination:
     namespace: nginx-pod-dev
-    name: us-support-v2-cluster
   source:
     repoURL: https://github.com/nightmar39/cd-five-mins-testing.git
     targetRevision: main

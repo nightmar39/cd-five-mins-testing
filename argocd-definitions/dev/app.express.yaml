@@ -9,7 +9,6 @@ metadata:
 spec:
   destination:
     namespace: express-dev
-    name: us-support-v2-cluster
   project: default
   source:
     path: ./k8s-resources/express/overlays/dev
