@@ -4,8 +4,6 @@ metadata:
   name: trio-dev
   labels:
     app: trio-dev
-  finalizers:
-    - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   destination:

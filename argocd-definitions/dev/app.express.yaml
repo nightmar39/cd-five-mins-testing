@@ -4,8 +4,6 @@ metadata:
   name: express-dev
   labels:
     app: express-dev
-  finalizers:
-    - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
     namespace: express-dev

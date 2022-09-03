@@ -4,8 +4,6 @@ metadata:
   name: nginx-pod-dev
   labels:
     app: nginx-pod-dev
-  finalizers:
-    - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   destination:
