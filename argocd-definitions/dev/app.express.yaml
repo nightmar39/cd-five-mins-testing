@@ -9,6 +9,7 @@ metadata:
 spec:
   destination:
     namespace: express-dev
+    server: https://kubernetes.default.svc
   project: default
   source:
     path: ./k8s-resources/express/overlays/dev
